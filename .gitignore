@@ -1,33 +1,48 @@
-# Gradle files
+# Android Studio project
 .gradle/
-build/
-
-# Local configuration file (sdk path, etc)
-local.properties
-
-# Log/OS Files
-*.log
-
-# Android Studio generated files and folders
-captures/
-.externalNativeBuild/
-.cxx/
-*.apk
-output.json
-
-# IntelliJ
-*.iml
 .idea/
-misc.xml
-deploymentTargetDropDown.xml
-render.experimental.xml
+*.iml
+gradle/
+build/
+captures/
+local.properties
+out/
 
-# Keystore files
-*.jks
-*.keystore
+# Gradle Wrapper
+gradle/wrapper/gradle-wrapper.jar
+gradle/wrapper/gradle-wrapper.properties
 
-# Google Services (e.g. APIs or Firebase)
-google-services.json
+# Generated files
+app/build/
+build/
+app/release/
 
-# Android Profiling
-*.hprof
+# Ignore any local configuration files
+**/local.properties
+
+# Ignore Android Studio files
+**/*.jks
+**/.idea/
+**/.gradle/
+**/out/
+**/build/
+**/captures/
+**/*.iml
+
+# Ignore Android build files
+**/build/
+**/app/build/
+**/gradle/
+
+# Ignore generated APKs
+**/*.apk
+**/*.ap_
+**/outputs/
+
+# Ignore lint results
+**/lint-results.xml
+
+# Ignore the Android generated JSON and XML files
+**/google-services.json
+**/app/google-services.json
+**/app/src/*/res/values/google_maps_api.xml
